@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>
+      My Journal
+    </title>
+    <style>
+      /*font import*/
+      @import url('https://fonts.googleapis.com/css2?family=Exo&family=Playfair+Display&display=swap');
+
+      * {
+        padding: 0 ;
+        margin: 0 ;
+      }
+      
+      body {
+        font-family: 'Exo', sans-serif;
+      }
+
+      h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+        color: darkgreen;
+      }
+
+      .entries {
+        padding: 10px 7px;
+        margin: 2% 3%;
+        border: 5px solid darkgreen;
+        background-color: #88BD81;
+        color: floralwhite;
+      }
+
+      .entries:nth-child(odd) {
+        background-color: lightcoral;
+        color: floralwhite;
+      }
+      
+      /*Nav bar*/
+      nav {
+        background-color: #88BD81;
+        color: #ffff;
+        text-align: center;
+        font-size: 40px;
+        padding: 20px;
+      }
+      button {
+        background-color: darkgoldenrod;
+        color: floralwhite;
+        padding: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 2% 5% 5% auto;
+        float: right;
+        font-weight: 700;
+        border-radius: 10px; 
+      }
+
+      #secret1p,#secret2p,#secret3p,#secret4p,#secret5p,#secret6p {
+        display: none;
+      }
+
+      footer {
+        background-color: darkgreen;
+        color: white;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 50px 0;
+        margin-top: 50px;
+      }
+
+      img {
+        width: 250px;
+        margin-top: 15px;
+        border: 5px solid floralwhite;
+      }
+
+
+    </style>
+  </head>
+
+  
+  <body> 
+    <nav>
+     <h1>
+      My Journal 
+     </h1>
+    </nav>
+  
+    <!--journal entries-->
+    <main>
+      <div class= "entries">
+        <h1>
+          Barnes and Noble- Thu Apr 6
+        </h1>
+        <p>
+          Barnes and Noble is my favorite store in earth. It is full of books and things I love. Today, I got two new books from Barnes and Noble: A Good Girl's Guide to Murder and The Way I Used To Be. I can't wait to read them both.
+        </p>
+        <img src= "img/books-gif.gif" alt= "Rory Gilmore saying that a book smells good"/>
+        <br />
+        <button id= "secret1btn" onclick="secret1reveal()">
+          Show Top Secret
+        </button>
+        <br />
+        <p id= "secret1p">
+          I love smelling books.
+        </p>
+      </div>
+      <div class= "entries">
+        <h1>Sanfrancisco Outlet- Wed Apr 5</h1>
+        <p>Today, I went to the Sanfrancisco Premium Outlet to go clothes shopping. It was mainly for spring and summer clothes but we ended up getting drinks, chocolate, and many more. It was such a fun day and I hope we go there again.</p>
+        <img src= "img/shopping.gif" width= 300 alt= "A girl running with a shopping cart.">
+        <br/>
+        <button id= "secret2btn" onclick="secret2reveal()">Show Top Secret</button>
+        <br />
+        <p id= "secret2p">I have a shopping addiction specifically dedicated to clothes, books, and anything related to Taylor Swift.</p>
+      </div>
+      <div class= "entries">
+        <h1>A Good Girl's Guide to Murder- Sun Apr 9</h1>
+        <p>I just finished my book: A Good Girl's Guide to Murder. My favorite part about this book was that the plot wasn't obvious unlike most of the other mystery books I have read and that I could relate to the main character a lot. The main character, Pippa, is a senior at her high school who decides to solve her town's darkest crime that happened 5 years ago for a school project. I like that her personality and characteristics enhances the plot to its best.</p>
+        <img src= "img/solvemystery.gif" width= "380" alt= "A dog saying that he's going to solve a mystery">
+        <br />
+        <button id= "secret3btn" onclick="secret3reveal()">Show Top Secret</button>
+        <br />
+        <p id= "secret3p">I stayed up all night to finish this book.</p>
+      </div>
+      <div class= "entries">
+        <h1>Arrive at Hume Lake- Mon Apr 10</h1>
+        <p>I just arrived at Hume Lake for a school camp! I'm very excited for all the activities and classes that they have prepared for us. My friends and I already planned out our free time together, and today, we're going to the general store.</p>
+        <img src= "img/school trip.gif" alt= "a gif of a party in a bus.">
+        <br />
+        <button id= "secret4btn" onclick="secret4reveal()">Show Top Secret</button>
+        <br />
+        <p id= "secret4p">My friend and I took a bunch of selfies on the bus.</p>
+      </div>
+      <div class= "entries">
+        <h1>Swifties! Gather Up!- Thu Apr 13</h1>
+        <p>At our camp, there is a speaker named Austin who speaks for us during chapel, announcements, and just for some general things. And today, during chapel, he told us a secret that he's been keeping from us: HE'S A FAN OF TAYLOR SWIFT! When he said that, all the girls from our school, including me, cheered and clapped. I used to like his chapels but now, I LOVE them.</p>
+        <img src= "img/Taylor.gif" alt="Taylor Swift giving two thumbs up">
+      <br /> 
+        <button id= "secret5btn" onclick="secret5reveal()">Show Top Secret</button>
+        <p id= "secret5p">My favorite song by Taylor Swift is Sparks Fly.</p>
+        <br /> 
+      </div>
+      <div class= "entries">
+        <h1>Back to School- Mon Apr 17</h1>
+        <p>After the end of Spring Break which was followed up by a school trip, I don't feel like going back to school. I woke up at 7:00am feeling as tired as ever and I would've done anyhting to skip school. But, nevertheless, I still had to attend. And as expected, I almost fell asleep at school and I barely got through PE. But I'm glad that it's finally over and that I can go back to relaxing.</p>
+        <img src= "img/SLEEP.gif" width= "300" alt= "A boy falling asleep at school">
+        <br />
+        <button id= "secret6btn" onclick="secret6reveal()">Show Top Secret</button>
+        <p id= "secret6p">I think I actually slept through some of math class today...</p>
+        <br /> 
+      </div>
+    </main>
+    <footer>
+      <p>
+        Made with love by Jamie, 2023 ©
+      </p>
+    </footer>
+    
+    <script>
+      function secret1reveal() {
+       var secret1p = document.querySelector("#secret1p");
+       var secret1btn = document.querySelector("#secret1btn");
+       if (secret1p.style.display == "none") {
+         secret1p.style.display = "block";
+         secret1btn.innerHTML = "Hide Top Secret";
+       }
+       else {
+         secret1p.style.display = "none";
+         secret1btn.innerHTML = "Show Top Secret";
+       }
+      } 
+      function secret2reveal() {
+       var secret2p = document.querySelector("#secret2p");
+       var secret2btn = document.querySelector("#secret2btn");
+       if (secret2p.style.display == "none") {
+         secret2p.style.display = "block";
+         secret2btn.innerHTML = "Hide Top Secret";
+       }
+       else {
+         secret2p.style.display = "none";
+         secret2btn.innerHTML = "Show Top Secret";
+       }
+      } 
+      function secret3reveal() {
+       var secret3p = document.querySelector("#secret3p");
+       var secret3btn = document.querySelector("#secret3btn");
+       if (secret3p.style.display == "none") {
+         secret3p.style.display = "block";
+         secret3btn.innerHTML = "Hide Top Secret";
+       }
+       else {
+         secret3p.style.display = "none";
+         secret3btn.innerHTML = "Show Top Secret";
+       }
+      } 
+      function secret4reveal() {
+       var secret4p = document.querySelector("#secret4p");
+       var secret4btn = document.querySelector("#secret4btn");
+       if (secret4p.style.display == "none") {
+         secret4p.style.display = "block";
+         secret4btn.innerHTML = "Hide Top Secret";
+       }
+       else {
+         secret4p.style.display = "none";
+         secret4btn.innerHTML = "Show Top Secret";
+       }
+      } 
+      function secret5reveal() {
+       var secret5p = document.querySelector("#secret5p");
+       var secret5btn = document.querySelector("#secret5btn");
+       if (secret5p.style.display == "none") {
+         secret5p.style.display = "block";
+         secret5btn.innerHTML = "Hide Top Secret";
+       }
+       else {
+         secret5p.style.display = "none";
+         secret5btn.innerHTML = "Show Top Secret";
+       }
+      } 
+      function secret6reveal() {
+       var secret6p = document.querySelector("#secret6p");
+       var secret6btn = document.querySelector("#secret6btn");
+       if (secret6p.style.display == "none") {
+         secret6p.style.display = "block";
+         secret6btn.innerHTML = "Hide Top Secret";
+       }
+       else {
+         secret6p.style.display = "none";
+         secret6btn.innerHTML = "Show Top Secret";
+       }
+      } 
+      
+      
+        
+      
+    </script>
+    
+  </body>
+  
+</html>
